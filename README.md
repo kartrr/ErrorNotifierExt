@@ -20,3 +20,7 @@ Whenever an error happens on a page, you get a toast popup inside the site and a
 👆 Click a notification → focuses the tab and automatically opens DevTools.
 
 🧹 Noise filtering – ignores known noisy errors like "ResizeObserver loop limit exceeded" or blank "Script error" from cross-origin scripts.
+
+# Example
+
+![Notify screen]((./chrome/images/example.png)
