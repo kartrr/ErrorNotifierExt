@@ -23,4 +23,4 @@ Whenever an error happens on a page, you get a toast popup inside the site and a
 
 # Example
 
-![Notify screen]((./chrome/images/example.png)
+![Notify screen](./chrome/images/example.png)
