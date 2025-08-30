@@ -1,24 +1,56 @@
 {
   "manifest_version": 3,
   "name": "QA Error Notifier",
-  "version": "0.2.0",
-  "description": "Shows popup notifications for JS/Promise/console.error on the page. Deduplication and quick navigation to DevTools.",
-  "permissions": ["notifications", "storage", "scripting", "activeTab", "tabs"],
-  "host_permissions": ["<all_urls>"],
-  "background": { "service_worker": "bg.js" },
-  "action": { "default_title": "QA Error Notifier" },
+  "version": "1.0.0",
+  "description": "Shows popup notifications for JS errors on the page.",
+
+  "permissions": [
+    "notifications",
+    "storage",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "background": {
+    "service_worker": "bg.js"
+  },
+
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"],
-      "run_at": "document_start",
-      "all_frames": true
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
     }
   ],
+
   "web_accessible_resources": [
     {
-      "resources": ["pageHook.js"],
-      "matches": ["<all_urls>"]
+      "resources": [
+        "pageHook.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
     }
-  ]
+  ],
+
+  "action": {
+    "default_title": "QA Error Notifier",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png"
+    }
+  },
+
+  "icons": {
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
 }
