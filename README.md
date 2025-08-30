@@ -1,4 +1,4 @@
-# QA Error Notifier
+# QA Error Notifier - Web Browser Extension
 
 A simple Chrome extension that helps QA engineers and developers always be notified about JavaScript errors without keeping DevTools open.
 
