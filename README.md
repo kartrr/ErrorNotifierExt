@@ -23,4 +23,8 @@ Whenever an error happens on a page, you get a toast popup inside the site and a
 
 # Example
 
-![Notify screen]((./chrome/images/example.png)
+Just my own website with a web game:
+![Notify screen](./docs/example.png)
+
+DailyMail website with a lot of errors:
+![Notify screen](./docs/exampleDM.png)
