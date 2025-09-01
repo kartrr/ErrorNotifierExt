@@ -3,7 +3,7 @@
 
   function send(evt) {
     try {
-      window.postMessage({ __qaen: true, type: POST_TYPE, payload: evt }, "*");
+      window.postMessage({ __qaen: true, type: POST_TYPE, payload: evt }, window.location.origin);
     } catch (_) {}
   }
 
