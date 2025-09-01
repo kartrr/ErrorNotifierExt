@@ -28,3 +28,7 @@ Just my own website with a web game:
 
 DailyMail website with a lot of errors:
 ![Notify screen](./docs/exampleDM.png)
+
+## Privacy Policy
+
+You can view the privacy policy for this extension at the following link: [Privacy Policy Page](https://kartrr.github.io/ErrorNotifierExt/docs/privacy-policy.html)
